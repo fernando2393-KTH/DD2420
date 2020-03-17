@@ -1,0 +1,6 @@
+Each line contains one landmark
+
+For each line:
+  #1 the id of the landmark
+  #2 the x-position of the landmark
+  #3 the y-position of the landmark

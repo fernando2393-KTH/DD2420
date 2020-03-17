@@ -1,0 +1,14 @@
+Each line contains one time step.
+
+For each line:
+  #1 contains the current time
+  #2-4 contains odometry
+  #5-6 contains encoders for the left and right wheels
+  #7-9 contains the true pose
+  #10 says how many landmarks are in the remainder of the line
+  #11:3:end contains the id of the landmarks  
+(i.e. start at element 11 and take steps of three elements till you get to the end of the line.)
+  #12:3:end contains the bearings to the landmarks
+  #13:3:end contains the ranges to the landmarks
+
+You can look at the class SimStep in Aux folder to see how on line of the data file is parsed by Matlab to give the 'SimStep' object that holds all this iteration's data.  That class then contains helper functions that 'remember for you where to find the various data,
